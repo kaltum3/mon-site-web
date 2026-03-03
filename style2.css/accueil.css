@@ -34,7 +34,7 @@ ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/media/diaro.jpeg);
+  background-image: url("../media/diaro.jpeg");
   background-size: cover;
   background-position: center;
 }
