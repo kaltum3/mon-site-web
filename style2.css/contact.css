@@ -1,0 +1,98 @@
+ody{
+  padding: 0;%
+  margin: 0%;
+  font-family:century;
+}
+
+ul{
+  list-style: none;
+  float: right; /*DISPOSSER LES ELEMENTS A DROITE*/
+  display: flex;
+  margin-top: 20px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: 500;
+}
+ul li a:hover{
+  background:burlywood;
+}
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:burlywood;
+}
+.contact {
+  background:white; /* dégradé chic */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  color:burlywood;
+}
+
+.formulaire-contact {
+  max-width: 500px;
+  margin: 0 auto;
+  background:burlywood;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.champ {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.champ label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.champ input,
+.champ textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.champ input:focus,
+.champ textarea:focus {
+  border-color: #b8860b; /* doré élégant */
+  outline: none;
+}
+
+button {
+  background:brown; /* doré */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #a0740a;
+}
+

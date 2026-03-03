@@ -1,0 +1,263 @@
+/* Style global */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Century Gothic", sans-serif;
+}
+
+/* Navigation */
+ul {
+  list-style: none;
+  float: right;
+  display: flex;
+  margin-top: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: 500;
+}
+ul li a:hover {
+  background: burlywood;
+}
+
+/* Titre principal */
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: burlywood;
+}
+
+/* Bannière */
+.banniere {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/media/diaro.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banniere::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+.banniere .contenu {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+.banniere .contenu h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banniere .contenu p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.bouton {
+  font-size: 1.2em;
+  color: white;
+  background: #c49b63;
+  padding: 12px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.bouton:hover {
+  background: #a67c52;
+  letter-spacing: 2px;
+}
+
+/* Section À propos */
+.Apropos {
+  padding: 80px 20px;
+  background: #fdfdfd;
+}
+.pub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+.pub .bijoux {
+  flex: 1;
+  min-width: 300px;
+}
+.titre-texte {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #c49b63;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.titre-texte span {
+  color: #a67c52;
+}
+.bijoux p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+.img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.img img:hover {
+  transform: scale(1.05);
+}
+
+/* Section Produits */
+.produits {
+  padding: 60px 20px;
+  background: #fdfdfd;
+}
+
+.produits .titre h1 {
+  font-size: 2.5em;
+  color: #c49b63;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.carte-produit {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.carte-produit:hover {
+  transform: scale(1.05);
+}
+
+.carte-produit img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.reference {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.prix {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #c49b63;
+  margin-bottom: 10px;
+}
+
+.btn-panier {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #c49b63;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.btn-panier:hover {
+  background: #a67c52;
+}
+
+/* Section Contact */
+.contact {
+  background: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.contact p {
+  margin-bottom: 30px;
+  color: burlywood;
+}
+.formulaire-contact {
+  max-width: 500px;
+  margin: 0 auto;
+  background: burlywood;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.champ {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.champ label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+.champ input,
+.champ textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+.champ input:focus,
+.champ textarea:focus {
+  border-color: #b8860b;
+  outline: none;
+}
+button {
+  background: brown;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #a0740a;
+}

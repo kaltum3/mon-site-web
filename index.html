@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css/monsiteweb.css">
+</head>
+<body>
+  <header>
+    <div class="principale">
+      <nav>
+        <ul>
+          <li class="active"><a href="accueil.html">ACCUEIL</a></li>
+          <li><a href="apropos.html">APROPOS</a></li>
+          <li><a href="produit.html">PRODUIT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="titre">
+      <h1>AZELYA</h1>
+    </div>
+  </header>
+  <section class="banniere" id="banniere">
+    <div class="contenu">
+      <h2>Bienvenue chez AZELYA</h2>
+      <p>Chaque bijoux de notre marque est pensé pour sublimer votre style et révéler votre beauté.</p>
+      <a href="produit.html" class="bouton">NOS PRODUITS</a>
+    </div>
+   
+  </section>
+  <hr>
+  <!--SECTION DE A PROPOS-->
+  <section class="Apropos" id="apropos">
+    <div class="pub">
+      <div class="bijoux">
+        <h2  class="titre-texte"><span>A</span> Propos De Nous </h2>
+        <p>Nos bijoux ne sont pas de simples accessoires, ce sont des touches de lumière qui subliment votre style et révèlent votre personnalité. 
+          Chaque pièce est choisie avec soin pour apporter une note de raffinement, de douceur et de beauté à votre quotidien.
+          Q'uil s'agisse d'un collier délicat, d'un bracelet élégant ou  d'une bague scintillante, chaque bijoux est fait pour vous faire sentir unique .</p>
+      </div>
+      <div class="bijoux">
+        <div class="img">
+          <img src="/media/femme.jpeg" alt="image" height="500" width="400"  style="border-radius: 20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  
+</section>
+
+</body>
+</html><!--SECTION PRODUITS-->
+<section class="produits" id="produits">
+  <div class="titre">
+    <h1 class="produit">Nos Produits</h1>
+  </div>
+
+  <div class="contenu">
+    <!-- Produit 1 -->
+    <div class="carte-produit">
+      <img src="/media/bague.jpeg" alt="Bague élégante">
+      <p class="reference">Réf : BAG001</p>
+      <p class="prix">80 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 2 -->
+    <div class="carte-produit">
+      <img src="media/boucle d'oreille.jpeg" alt="Boucles d'oreilles">
+      <p class="reference">Réf : BOU002</p>
+      <p class="prix">40 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="carte-produit">
+      <img src="media/van cleef.jpeg" alt="Bracelet élégant">
+      <p class="reference">Réf : BRA003</p>
+      <p class="prix">70 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="carte-produit">
+      <img src="media/bracelets.jpeg" alt="Collier chic">
+      <p class="reference">Réf : COL004</p>
+      <p class="prix">50 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="carte-produit">
+      <img src="media/colier.jpeg" alt="Diadème élégant">
+      <p class="reference">Réf : DIA005</p>
+      <p class="prix">90 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 6 -->
+    <div class="carte-produit">
+      <img src="/media/main.jpeg" alt="Bijou de main">
+      <p class="reference">Réf : MAIN006</p>
+      <p class="prix">60 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 7 -->
+    <div class="carte-produit">
+      <img src="media/bijoux.jpeg" alt="Pendentif raffiné">
+      <p class="reference">Réf : PEN007</p>
+      <p class="prix">55 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+
+    <!-- Produit 8 -->
+    <div class="carte-produit">
+      <img src="/media/van.jpeg" alt="Bijou Van Cleef">
+      <p class="reference">Réf : VAN008</p>
+      <p class="prix">120 €</p>
+      <a href="#" class="btn-panier">Ajouter au panier</a>
+    </div>
+  </div>
+</section>
+
+    
+      
+
+<!-- SECTION CONTACT-->
+<section class="contact" id="contact">
+  <div class="titre">
+    <h2><span>C</span>ontactez-nous</h2>
+    <br>
+    
+  </div>
+
+  <form class="formulaire-contact">
+    <div class="champ">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+    </div>
+     <div class="champ">
+      <label for="nom">Prenom</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" required>
+    </div>
+
+
+    <div class="champ">
+      <lab el for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required>
+    </div>
+
+    <div class="champ">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+    </div>
+
+    <button type="submit">Envoyer</button>
+  </form>

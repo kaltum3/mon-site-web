@@ -1,0 +1,362 @@
+.contenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px;
+}
+
+.bague {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.bague:hover {
+  transform: scale(1.05);
+}
+
+.imgbague img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.details {
+  padding: 10px;
+}
+
+.reference, .prix {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.btn-panier {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #c49b63;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-panier:hover {
+  background: #a67c52;
+}
+.imgbague img {
+  width: 200px;       /* largeur fixe */
+  height: 200px;      /* hauteur fixe */
+  object-fit: cover;  /* recadre l’image sans la déformer */
+  border-radius: 10px;
+}
+.logo-panier {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background: #c49b63;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#compteur {
+  background: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+
+
+
+
+body{
+  padding: 0;%
+  margin: 0%;
+  font-family:century;
+}
+
+ul{
+  list-style: none;
+  float: right; /*DISPOSSER LES ELEMENTS A DROITE*/
+  display: flex;
+  margin-top: 20px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: 500;
+}
+ul li a:hover{
+  background:burlywood;
+}
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:burlywood;
+}
+.banniere {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/media/diaro.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banniere::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4); /* voile sombre pour que le texte ressorte */
+}
+
+.banniere .contenu {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.banniere .contenu h2 {
+  font-size: 3em;          /* plus grand titre */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.banniere .contenu p {
+  font-size: 1.4em;        /* texte plus lisible */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.bouton {
+  font-size: 1.2em;
+  color: white;
+  background: #c49b63;
+  padding: 12px 25px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+/* Section À propos */
+.Apropos {
+  padding: 80px 20px;
+  background: #fdfdfd; /* fond clair élégant */
+}
+
+.pub {
+  display: flex;
+  flex-wrap: wrap; /* s’adapte aux petits écrans */
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.bijoux {
+  flex: 1;
+  min-width: 300px;
+}
+
+.titre-texte {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #c49b63; /* doré chic */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.titre-texte span {
+  color: #a67c52; /* accent doré plus foncé */
+}
+
+.bijoux p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+.img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.img img:hover {
+  transform: scale(1.05); /* effet zoom chic */
+}
+.contenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px;
+}
+
+.bague {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.bague:hover {
+  transform: scale(1.05);
+}
+
+.imgbague img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+  
+}
+
+.details {
+  padding: 10px;
+}
+
+.reference, .prix {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.btn-panier {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #c49b63;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-panier:hover {
+  background: #a67c52;
+}
+.imgbague img {
+  width: 200px;       /* largeur fixe */
+  height: 200px;      /* hauteur fixe */
+  object-fit: cover;  /* recadre l’image sans la déformer */
+  border-radius: 10px;
+}
+.logo-panier {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background: #c49b63;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#compteur {
+  background: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.contact {
+  background:white; /* dégradé chic */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  color:burlywood;
+}
+
+.formulaire-contact {
+  max-width: 500px;
+  margin: 0 auto;
+  background:burlywood;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.champ {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.champ label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.champ input,
+.champ textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.champ input:focus,
+.champ textarea:focus {
+  border-color: #b8860b; /* doré élégant */
+  outline: none;
+}
+
+button {
+  background:brown; /* doré */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #a0740a;
+}
+
